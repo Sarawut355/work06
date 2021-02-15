@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="navbar navbar-dark bg-dark">
       <div id="nav">
-        <router-link to="/">Home</router-link> |
+        <router-link to="/"> <b-icon icon="basket2-fill" style="width: 30px; height: 30px;"></b-icon> </router-link> |
         <router-link to="/about">Product</router-link>
       </div>
       <div>
