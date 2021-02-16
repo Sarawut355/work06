@@ -1,9 +1,6 @@
 <template>
   <div class="home">
-    <user
-      :Total="Total"
-      :Data="Data"
-    />
+    <user :Total="Total" :Data="Data" />
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -15,10 +12,10 @@
       </thead>
       <tbody>
         <tr v-for="(mi, index) in Data" :key="index">
-          <td>{{mi.NameProduct}}</td>
-          <td>{{mi.Price}}</td>
-          <td>{{mi.Amount}}</td>
-          <td>{{mi.Price*mi.Amount}}</td>
+          <td>{{ mi.NameProduct }}</td>
+          <td>{{ mi.Price }}</td>
+          <td>{{ mi.Amount }}</td>
+          <td>{{ mi.Total }}</td>
         </tr>
       </tbody>
     </table>
@@ -32,15 +29,14 @@ import User from "../components/User.vue";
 export default {
   name: "Home",
   components: {
-    User,
+    User
   },
   props: {
-    Total:Number,
-    Data: Array,
+    Total: Number,
+    Data: Array
   },
   data() {
-    return {
-    };
-  },
+    return {};
+  }
 };
 </script>

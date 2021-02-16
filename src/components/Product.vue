@@ -6,7 +6,7 @@
       header-bg-variant="primary"
       header-text-variant="white"
       align="center"
-      style="height : 40rem;"
+      style="height: 40rem"
       ><b-col md="12">
         <b-card-img :src="img" alt="Image" class="rounded-0"></b-card-img>
       </b-col>
@@ -29,11 +29,11 @@ export default {
   props: {
     NameProduct: String,
     img: String,
-    Price: Number,
+    Price: Number
   },
   data() {
     return {
-      Amount: 0,
+      Amount: 0
     };
   },
   methods: {
@@ -43,10 +43,10 @@ export default {
         NameProduct: this.NameProduct,
         Price: this.Price,
         Amount: this.Amount,
+        Total: this.Price * this.Amount
       });
-    },
-  },
+    }
+  }
 };
 </script>
-<style >
-</style>
+<style></style>

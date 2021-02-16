@@ -13,7 +13,9 @@
       placeholder="ราคา"
       v-model="Price"
     />
-    <button type="button" class="btn btn-outline-info" @click="OrderAdmin()"><b-icon icon="Tools"></b-icon>สร้าง</button>
+    <button type="button" class="btn btn-outline-info" @click="OrderAdmin()">
+      <b-icon icon="Tools"></b-icon>สร้าง
+    </button>
   </div>
 </template>
 <script>
@@ -22,7 +24,7 @@ export default {
     return {
       Name: "",
       img: "",
-      Price: 0,
+      Price: 0
     };
   },
   methods: {
@@ -33,7 +35,7 @@ export default {
         Price: this.Price,
         img: this.img
       });
-    },
+    }
   }
 };
 </script>

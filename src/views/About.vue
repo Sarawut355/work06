@@ -1,6 +1,8 @@
 <template>
   <div class="about">
-    <div class="text-danger">****กรุณากดยืนยันเพื่อยืนยันสินค้าที่ท่านเลือก****</div>
+    <div class="text-danger">
+      ****กรุณากดยืนยันเพื่อยืนยันสินค้าที่ท่านเลือก****
+    </div>
     <div class="row">
       <product
         v-for="(item, index) in Menuitem"
@@ -18,20 +20,19 @@ import Product from "../components/Product.vue";
 export default {
   components: { Product },
   props: {
-    Menuitem: Array,
+    Menuitem: Array
   },
   data() {
     return {
-      select: [],
+      select: []
     };
   },
   methods: {
     menuorder(value) {
       this.select.push(value);
       this.$emit("Order", this.select);
-    },
-  },
+    }
+  }
 };
 </script>
-<style >
-</style>
+<style></style>

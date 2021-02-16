@@ -26,11 +26,7 @@
 
         <div class="row justify-content-end">
           <h4 class="col-lg-4">ยอดรวม : {{ Total }} บาท</h4>
-          <button
-            type="button "
-            class="btn btn-success  mr-4"
-            @click="sum()"
-          >
+          <button type="button " class="btn btn-success mr-4" @click="sum()">
             BUY
           </button>
         </div>
@@ -43,18 +39,17 @@
 export default {
   props: {
     Total: Number,
-    Data: Array,
+    Data: Array
   },
   data() {
     return {
       Name: "",
-      Tel: "",
+      Tel: ""
     };
   },
   methods: {
     //ออกบิล
     sum() {
-      
       alert(
         "Name : " +
           this.Name +
@@ -64,8 +59,8 @@ export default {
           this.Total +
           " ฿"
       );
-    },
-  },
+    }
+  }
 };
 </script>
 
