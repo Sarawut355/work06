@@ -2,17 +2,17 @@
   <div id="app">
     <nav class="navbar navbar-dark bg-dark">
       <div id="nav">
-        <router-link to="/">
+        <router-link to="/User">
           <b-icon
             icon="basket2-fill"
             style="width: 30px; height: 30px"
           ></b-icon>
         </router-link>
         |
-        <router-link to="/about">Product</router-link>
+        <router-link to="/">Product</router-link>
       </div>
       <div>
-        <router-link to="/">
+        <router-link to="/User">
           <button
             type="button "
             class="btn btn-outline-success mr-1"
@@ -118,8 +118,8 @@ export default {
     },
     AddMenu(value) {
       this.Menuitem.push(value);
-    },
-  },
+    }
+  }
 };
 </script>
 

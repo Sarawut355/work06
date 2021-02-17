@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      Amount: 0
+      Amount: 1
     };
   },
   methods: {
